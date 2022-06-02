@@ -21,6 +21,9 @@ jobs: # a collection of steps
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
+      - run: # run npm i -json
+          name: install json
+          command: 'sudo npm install -g json'
       - run: # run snyk test - run snyk test
           name: snyk test
           command: snyk test
