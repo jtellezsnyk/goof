@@ -22,5 +22,5 @@ jobs: # a collection of steps
           name: update-npm
           command: 'sudo npm install -g npm@latest'
       - run: # run snyk test - run snyk test
-          name: snyk test
-          command: snyk test
+          name: snyk code test
+          command: snyk code test
