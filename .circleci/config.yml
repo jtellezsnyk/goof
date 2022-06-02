@@ -18,9 +18,6 @@ jobs: # a collection of steps
       - run: # run snyk auth - authenticate snyk use environment variables to add token
           name: snyk auth
           command: snyk auth $SNYK_TOKEN
-      - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@latest'
       - run: # run snyk test - run snyk test
-          name: snyk code test
-          command: snyk code test
+          name: snyk test
+          command: snyk test
